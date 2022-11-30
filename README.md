@@ -29,3 +29,6 @@ Macy So, Lazaro Solorzano, Jared Chou
 [Adding closed captions and subtitles](https://cloud.google.com/transcoder/docs/how-to/captions-and-subtitles)
 
 [Automated Audio Captioning](https://dcase.community/challenge2021/task-automatic-audio-captioning)
+
+### Research Paper
+[NLP Driven Ensemble Based Automatic Subtitle Generation and Semantic Video Summarization Technique](https://www.google.com/url?q=https://arxiv.org/pdf/1904.09740.pdf&sa=D&source=docs&ust=1669834722617923&usg=AOvVaw2Ww2EVMGVBoJeQCeZpn4HY)
