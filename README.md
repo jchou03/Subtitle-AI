@@ -1,11 +1,15 @@
 # Subtitle-AI
 
+## Team Member 
+Macy So, Lazaro Solorzano, Jared Chou
 ## Problem Statement
 
 Creating live subtitles for videos/audio to better enable people who may struggle with parsing audio directly, especially with low audio quality.
 
-### Team Member 
-Macy So, Lazaro Solorzano, Jared Chou
+## Milestones
+### Model Accuracy Measure
+50% transcription accuracy on testing data for success
+
 
 ## Abstract
 ## Background
