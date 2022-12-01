@@ -19,6 +19,9 @@ Creating live subtitles for videos/audio to better enable people who may struggl
 ## Future direction
 
 ## Resources 
+[OpenSubtitle Corpus](http://www.opensubtitles.org/)
+[Data Set](https://opus.nlpl.eu/OpenSubtitles2018.php)
+
 ### Blog 
 [Netflix Automated Subtitles](https://ottverse.com/netflix-automated-subtitling-using-ai-nlp/)
 
