@@ -19,6 +19,7 @@ The metric that we will use for our project will be transcription accuracy based
 
 ## Resources 
 [OpenSubtitle Corpus](http://www.opensubtitles.org/)
+
 [Data Set](https://opus.nlpl.eu/OpenSubtitles2018.php)
 
 ### Blog 
