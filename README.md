@@ -4,7 +4,7 @@
 Macy So, Lazaro Solorzano, Jared Chou
 ## Problem Statement
 
-Creating live subtitles for videos/audio to better enable people who may struggle with parsing audio directly, especially with low audio quality.
+Closed captioning displays the audio portion of a television program as text on the TV screen, providing a critical link to news, entertainment and information for individuals who are deaf or hard-of-hearing.  The importance of this project is to enhance the educational learning experience for students and others with disabilities. There should be no restrictions for simply trying to watch a video or anything related to the sorts. With subtitles/closed captions it will help eliminate this issue by being able to provide it to services that don’t already provide their our closed captions. This relates to work that we have done in the class because it is building on 
 
 ## Milestones
 ### Model Accuracy Measure
