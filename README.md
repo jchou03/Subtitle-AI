@@ -19,6 +19,9 @@ The metric that we will use for our project will be transcription accuracy based
 ## Future direction
 
 ## Resources 
+[OpenSubtitle Corpus](http://www.opensubtitles.org/)
+[Data Set](https://opus.nlpl.eu/OpenSubtitles2018.php)
+
 ### Blog 
 [Netflix Automated Subtitles](https://ottverse.com/netflix-automated-subtitling-using-ai-nlp/)
 
