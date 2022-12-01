@@ -8,7 +8,7 @@ Closed captioning displays the audio portion of a television program as text on 
 
 ## Milestones
 ### Model Accuracy Measure
-50% transcription accuracy on testing data for success
+The metric that we will use for our project will be transcription accuracy based on the partitioned test data set. Our baseline aim will be for at least 50% transcription accuracy on testing data for success, looking to push for much higher accuracy if we have time to do so. 
 
 
 ## Abstract
