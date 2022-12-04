@@ -11,6 +11,12 @@ The metric that we will use for our project will be transcription accuracy based
 
 
 ## Abstract
+
+1. Reason for writing: What is the importance of the research? Why would a reader be interested in the larger work?
+2. Problem: What problem does this work attempt to solve? What is the scope of the project? What is the main argument, thesis or claim?
+3. Methodology: An abstract of a scientific work may include specific models or approaches used in the larger study. Other abstracts may describe the types of evidence used in the research.
+4. Results: An abstract of a scientific work may include specific data that indicates the results of the project. Other abstracts may discuss the findings in a more general way.
+5. Implications: How does this work add to the body of knowledge on the topic? Are there any practical or theoretical applications from your findings or implications for future research? 
 ## Background
 ## Method
 ## Result
