@@ -14,15 +14,30 @@ The metric that we will use for our project will be transcription accuracy based
 Without having closed caption, all these important information will be lost by a viewer with hearing problem. But when a program has close caption, a viewer with hearing problem can pick up on sarcasm, understand the vibe of the crowd, and understand who is talking when they are not on screen.
 
 2. Problem: What problem does this work attempt to solve? What is the scope of the project? What is the main argument, thesis or claim?
+
+- Doing live audio translation / captioning 
+- Not all have captioning services have the capacity
+- Increase accuracy of close captioning
+
 3. Methodology: An abstract of a scientific work may include specific models or approaches used in the larger study. Other abstracts may describe the types of evidence used in the research.
+
+ - Pre-existing model, use transfer learning, to provide new audio data, to increase percision 
+ - Wave2Vec 
+
 4. Results: An abstract of a scientific work may include specific data that indicates the results of the project. Other abstracts may discuss the findings in a more general way.
 5. Implications: How does this work add to the body of knowledge on the topic? Are there any practical or theoretical applications from your findings or implications for future research? 
+
+- what we would want to do to improve accuracy ? train it on different data 
+- how does this contribute to the body of the pre-existing research ?
+- AI, robots, ML training 
+
 ## Background
-Nowadays, a lot of company starts to think about accessibility to not only their target audience, but outreaching to new audience as well. According to the NIHCD (National Institute on Deafness and Other Communication Disorders), approximately 15% of American adults (37.5 million) aged 18 and over report some trouble hearing. About 2 to 3 out of every 1,000 children in the USA are board with problem with hearing, with one or even both ears. This means, they won't be able to hear the tone, pick up on social clues, and other details that might required a normal person to hear from. 
+Nowadays, a lot of company starts to think about accessibility to not only their target audience, but outreaching to new audience as well. According to the NIHCD (National Institute on Deafness and Other Communication Disorders), approximately 15% of American adults (37.5 million) aged 18 and over report some trouble hearing. About 2 to 3 out of every 1,000 children in the USA are born with problem with hearing, with one or even both ears. This means, they won't be able to hear the tone, pick up on social clues, and other details that might required a normal person to hear from. 
 ## Method
-## Result
-## Analysis
+## Result & Analysis
 ## Future direction
+- improvements, explore what you would do next, and build next
+- AI, robots, ML training 
 
 ## Resources 
 [OpenSubtitle Corpus](http://www.opensubtitles.org/)
