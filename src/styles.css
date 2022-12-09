@@ -1,5 +1,42 @@
+html * {
+    font-family: "Poppins", sans-serif;
+}
+
 body {
     padding-left: 10%;
+    padding-right: 10%;
     background-color: burlywood;
     padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
 }
+
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+}
+
+footer {
+    border-top: 1px solid;
+    margin-top: auto;
+    padding-top: 2%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/*
+.upload {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.upload h3 {
+    margin-right: 5%;
+}
+*/

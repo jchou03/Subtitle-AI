@@ -7,20 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Subtitle AI</title>
     <link rel="stylesheet" href="styles.css" />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
 </head>
 <!--Upload ONLY .wav files-->
 
 <body>
-    <h1>Subtitle AI</h1>
+    <div class="title">
+        <h1>Subtitle AI</h1>
+        <h4>Fall22 505 Group Project</h4>
+    </div>
 
-    <form action="/action_page.php">
-        <input type="file" name="myFile" accept=".wav" />
-        <input type="submit" />
-    </form>
+    <div class="upload">
+        <h3>Step 1: upload a .wav file</h3>
+        <form action="/action_page.php">
+            <input type="file" name="myFile" accept=".wav" />
+            <input type="submit" />
+        </form>
+    </div>
 
-    <h2>Closed Captioning</h2>
+    <h3>Step 2: Wait for model to generate closed captioning</h3>
     <span>Nothing for now</span>
     <!--Need to transfer data from backend to frontend to display captions-->
 </body>
+
+<footer>Team Members: Macy So, Lazaro Solorzano, Jared Chou</footer>
 
 </html>
