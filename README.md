@@ -21,7 +21,7 @@ Nowadays, a lot of company starts to think about accessibility to not only their
 ## Method
 ## Result & Analysis
 ## Future direction
-For future directions, we would like to explore integrating this closed caption into Machine learning to train a robot.
+For future directions, we would like to explore integrating this closed caption into Machine learning to train a robot. Currently, we need to train a robots/AI with machine learning through programming, and writing codes. But what if, instead of writing codes, we talked to the robots, and internally generate closed caption to understand, and train itself. 
 
 ## Resources 
 [OpenSubtitle Corpus](http://www.opensubtitles.org/)
