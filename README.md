@@ -11,25 +11,10 @@ The metric that we will use for our project will be transcription accuracy based
 
 
 ## Abstract
-Without having closed caption, all these important information will be lost by a viewer with hearing problem. But when a program has close caption, a viewer with hearing problem can pick up on sarcasm, understand the vibe of the crowd, and understand who is talking when they are not on screen.
+Without having closed caption, all these important information will be lost by a viewer with hearing problem. But when a program has close caption, a viewer with hearing problem can pick up on sarcasm, understand the vibe of the crowd, and understand who is talking when they are not on screen. The problem that we are trying to solve is to provide a service, for every live audio translation, with closed captioning, as not every streaming service / video have closed captions. We are also aiming to increase the accuracy of closed captioning during this research process as well. We will be using a pre-existing model, and utilize transfer learning to create our own model. And to test it, we will be providing some new adios data to increase precision. The library in python that we will be using to create the model is Wave2Vec. [Insert Results Abstract] If this model is successful, some future applications that can utilized our findings could be related to advanced AI, Robots and ML training. So instead of programming it to learn, and train robots, what if we can talk to the robots instead, and have them closed captioning, and train robots and create machine learning in that way.
 
-2. Problem: What problem does this work attempt to solve? What is the scope of the project? What is the main argument, thesis or claim?
-
-- Doing live audio translation / captioning 
-- Not all have captioning services have the capacity
-- Increase accuracy of close captioning
-
-3. Methodology: An abstract of a scientific work may include specific models or approaches used in the larger study. Other abstracts may describe the types of evidence used in the research.
-
- - Pre-existing model, use transfer learning, to provide new audio data, to increase percision 
- - Wave2Vec 
-
+TODO: 
 4. Results: An abstract of a scientific work may include specific data that indicates the results of the project. Other abstracts may discuss the findings in a more general way.
-5. Implications: How does this work add to the body of knowledge on the topic? Are there any practical or theoretical applications from your findings or implications for future research? 
-
-- what we would want to do to improve accuracy ? train it on different data 
-- how does this contribute to the body of the pre-existing research ?
-- AI, robots, ML training 
 
 ## Background
 Nowadays, a lot of company starts to think about accessibility to not only their target audience, but outreaching to new audience as well. According to the NIHCD (National Institute on Deafness and Other Communication Disorders), approximately 15% of American adults (37.5 million) aged 18 and over report some trouble hearing. About 2 to 3 out of every 1,000 children in the USA are born with problem with hearing, with one or even both ears. This means, they won't be able to hear the tone, pick up on social clues, and other details that might required a normal person to hear from. 
