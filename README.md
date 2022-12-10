@@ -21,8 +21,7 @@ Nowadays, a lot of company starts to think about accessibility to not only their
 ## Method
 ## Result & Analysis
 ## Future direction
-- improvements, explore what you would do next, and build next
-- AI, robots, ML training 
+For future directions, we would like to explore integrating this closed caption into Machine learning to train a robot.
 
 ## Resources 
 [OpenSubtitle Corpus](http://www.opensubtitles.org/)
