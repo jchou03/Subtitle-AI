@@ -19,6 +19,8 @@ TODO:
 ## Background
 Nowadays, a lot of company starts to think about accessibility to not only their target audience, but outreaching to new audience as well. According to the NIHCD (National Institute on Deafness and Other Communication Disorders), approximately 15% of American adults (37.5 million) aged 18 and over report some trouble hearing. About 2 to 3 out of every 1,000 children in the USA are born with problem with hearing, with one or even both ears. This means, they won't be able to hear the tone, pick up on social clues, and other details that might required a normal person to hear from. 
 ## Method
+We are using a pre-trained Wav2Vec model to train our data, putting in our training data from our data folder. Wav2Vec model is pre-trained on 16 kHz frequency, a speech model that accepts a float array corresponding to the raw waveform of the speech signal. Then, we will convert the audio to text, passing the prediction to the tokenizer decode to get the transcription. 
+
 ## Result & Analysis
 ## Future direction
 For future directions, we would like to explore integrating this closed caption into Machine learning to train a robot. Currently, we need to train a robots/AI with machine learning through programming, and writing codes. But what if, instead of writing codes, we talked to the robots, and internally generate closed caption to understand, and train itself. 
