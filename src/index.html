@@ -11,6 +11,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+
+    <!--Python linking-->
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
 </head>
 <!--Upload ONLY .wav files-->
 
@@ -31,6 +35,7 @@
     <h3>Step 2: Wait for model to generate closed captioning</h3>
     <span>Nothing for now</span>
     <!--Need to transfer data from backend to frontend to display captions-->
+    <py-script src="predict.py"></py-script>
 </body>
 
 <footer>Team Members: Macy So, Lazaro Solorzano, Jared Chou</footer>
