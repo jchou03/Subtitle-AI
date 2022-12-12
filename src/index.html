@@ -26,16 +26,29 @@
 
     <div class="upload">
         <h3>Step 1: upload a .wav file</h3>
-        <form>
-            <input type="file" name="myFile" accept=".wav" />
-            <input type="submit" />
-        </form>
+        <input id="wavFile" type="file" name="myFile" accept=".wav" />
+        <button id="submit-button">Submit</button>
     </div>
 
     <h3>Step 2: Wait for model to generate closed captioning</h3>
-    <span>Nothing for now</span>
+    <p id="result"></p>
     <!--Need to transfer data from backend to frontend to display captions-->
-    <!-- <py-script src="predict.py"></py-script> -->
+
+    <script>
+        $("#submit-button").click(function(event) {
+            let parameter1 = {
+                return1: $("#wavFile").val(),
+            };
+            $.post(
+                "http://127.0.0.1:5000/predict",
+                JSON.stringify(parameter1),
+                function(transcription) {
+                    $("#result").text(transcription.result);
+                    console.log(transcription);
+                }
+            );
+        });
+    </script>
 </body>
 
 <footer>Team Members: Macy So, Lazaro Solorzano, Jared Chou</footer>
