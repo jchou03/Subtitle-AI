@@ -68,4 +68,5 @@ def predict (model, device, path):
 
     # decode the IDs to text
     transcription = processor.decode(predicted_ids[0])
+    print(transcription.upper())
     return transcription.upper()
