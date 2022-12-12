@@ -12,20 +12,21 @@ The metric that we will use for our project will be transcription accuracy based
 
 
 ## Abstract
-Without a closed caption, all this vital information will be lost by a viewer with a hearing problem. But when a program has a closed caption, a viewer with a hearing problem can pick up on sarcasm, understand the vibe of the crowd, and understand who is talking when they are not on screen. We are trying to solve the problem of providing a service for every live audio translation with closed captioning, as not every streaming service/video has closed captions. We are also aiming to increase the accuracy of closed captioning during this research process. We will be using a pre-existing model, and utilizing transfer learning to create our own model. And to test it, we will be providing some new adios data to increase precision. The library in python that we will be using to create the model is Wave2Vec. [Insert Results Abstract] If this model is successful, some future applications that can utilize our findings could be related to advanced AI, Robots, and ML training. So instead of programming it to learn and train robots, what if we can talk to the robots instead, and have them closed captioning, and train robots and create machine learning in that way?
+Without a closed caption, all this vital information will be lost by a viewer with a hearing problem. But when a program has a closed caption, a viewer with a hearing problem can pick up on sarcasm, understand the vibe of the crowd, and understand who is talking when they are not on screen. We are trying to solve the problem of providing a service for every live audio translation with closed captioning, as not every streaming service/video has closed captions. We are also aiming to increase the accuracy of closed captioning during this research process. We will be using a pre-existing model, and utilizing transfer learning to create our own model. And to test it, we will be providing some new adios data to increase precision. The library in python that we will be using to create the model is Wave2Vec. [Insert Results Abstract] If this model is successful, some future applications that can utilize our findings could be related to advanced AI, Robots, and ML training. So instead of programming it to learn and train robots, what if we can talk to the robots instead, and have them closed captioning, and train robots and create machine learning in that way? 
 
-
-
-TO-DO: 
-4. Results: An abstract of a scientific work may include specific data that indicates the results of the project. Other abstracts may discuss the findings in a more general way.
 
 ## Background
 Nowadays, a lot of company starts to think about accessibility to not only their target audience, but outreaching to new audience as well. According to the NIHCD (National Institute on Deafness and Other Communication Disorders), approximately 15% of American adults (37.5 million) aged 18 and over report some trouble hearing. About 2 to 3 out of every 1,000 children in the USA are born with problem with hearing, with one or even both ears. This means, they won't be able to hear the tone, pick up on social clues, and other details that might required a normal person to hear from. 
+
 ## Method
-We are using a pre-trained Wav2Vec model to train our data, and fine tuning hyperparameters in order to optimize the performance of the model. Wav2Vec model is pre-trained on 16 kHz frequency, a speech model that accepts a float array corresponding to the raw waveform of the speech signal. Then, we will convert the audio to text, passing the prediction to the tokenizer decode to get the transcription. We are utilizing clean testing data LibriSpeech ASR Corpus, 
+We are using a pre-trained Wav2Vec model to train our data, and fine tuning hyperparameters in order to optimize the performance of the model. Wav2Vec model is pre-trained on 16 kHz frequency, a speech model that accepts a float array corresponding to the raw waveform of the speech signal. Then, we will convert the audio to text, passing the prediction to the tokenizer decode to get the transcription. We are utilizing the LibriSpeech ASR Corpus, utilizing the clean testing data as the dataset that we are working with. We utilized gridsearch to evaluate several key hyperparmeters in order to test the difference in performance between their values. We evaluated the different models based on the Word Error Rate (WER) between the predicted sentences and the true transcription of the audio files. Upon running gridsearch across different hyperparmeters, we sort a dataframe containing the results of different hyperparmeter combinations in order to find the best performing set. 
+
+Upon performing research online, we decided that the model hyperparameters that we wanted to focus on tuning would be: attention_dropout, hidden_dropout, feat_proj_dropout, and mask_time_prob. We hypothesiszed that adjusting the dropout rate probabilities would change how much the model would "forget" as it iterated over the audio clip in order to take in new meaningful information, and potentially improve the model performance. We also hypothesized that adjusting the mask time probability would impact model performance, due to how it would change the percentage of feature vectors that would be masked, changing the information that the model would be working with which could lead to potential optimizations.
 
 ## Result & Analysis
-- most significant hyperparameter for test performance is hidden_dropout
+We found that there is no significant change in model performance with hyperparameter changes.
+
+- most significant hyperparameter for test performance is hidden_dropout 
 - no meaningful difference in evaluation score between different hyperparameter 
 
 Analysis: 
@@ -35,9 +36,8 @@ Analysis:
 For future directions, we would like to explore integrating this closed caption into Machine learning to train a robot. Currently, we need to train a robots/AI with machine learning through programming, and writing codes. But what if, instead of writing codes, we talked to the robots, and internally generate closed caption to understand, and train itself. 
 
 ## Resources 
-[OpenSubtitle Corpus](http://www.opensubtitles.org/)
-
-[Data Set](https://opus.nlpl.eu/OpenSubtitles2018.php)
+[Wav2Vec2](https://github.com/facebookresearch/fairseq/blob/main/examples/wav2vec/README.md)
+[LibriSpeech Dataset](http://www.openslr.org/12)
 
 ### Blog 
 [Netflix Automated Subtitles](https://ottverse.com/netflix-automated-subtitling-using-ai-nlp/)
