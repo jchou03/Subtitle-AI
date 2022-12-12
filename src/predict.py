@@ -14,20 +14,26 @@ from pydub import AudioSegment
 import shutil
 from jiwer import wer
 import accelerate
+from flask import Flask
+from flask import jsonify
+
+app = Flask(__name__)
+
+@app.route('/predict', methods=['POST'])
+
+def preprocess():
+    # Preprocessor and model weights
+    model_name = "facebook/wav2vec2-base-960h" # 360MB
+    # model_name = "facebook/wav2vec2-large-960h-lv60-self" # 1.18GB
+
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
-# Preprocessor and model weights
-model_name = "facebook/wav2vec2-base-960h" # 360MB
-# model_name = "facebook/wav2vec2-large-960h-lv60-self" # 1.18GB
-
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-
-
-# processor = Wav2Vec2Processor.from_pretrained(model_name)
-processor = Wav2Vec2Processor.from_pretrained(model_name)
-# model = Wav2Vec2ForCTC.from_pretrained(model_name)
-model = Wav2Vec2ForCTC.from_pretrained(model_name)
-model.to(device)
+    # processor = Wav2Vec2Processor.from_pretrained(model_name)
+    processor = Wav2Vec2Processor.from_pretrained(model_name)
+    # model = Wav2Vec2ForCTC.from_pretrained(model_name)
+    model = Wav2Vec2ForCTC.from_pretrained(model_name)
+    model.to(device)
 
 # define the prediction function which takes in the file path to a wav file and outputs the predicted words
 
@@ -68,5 +74,4 @@ def predict (model, device, path):
 
     # decode the IDs to text
     transcription = processor.decode(predicted_ids[0])
-    print(transcription.upper())
-    return transcription.upper()
+    return jsonify(transcription)
