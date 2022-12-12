@@ -22,10 +22,14 @@ TO-DO:
 ## Background
 Nowadays, a lot of company starts to think about accessibility to not only their target audience, but outreaching to new audience as well. According to the NIHCD (National Institute on Deafness and Other Communication Disorders), approximately 15% of American adults (37.5 million) aged 18 and over report some trouble hearing. About 2 to 3 out of every 1,000 children in the USA are born with problem with hearing, with one or even both ears. This means, they won't be able to hear the tone, pick up on social clues, and other details that might required a normal person to hear from. 
 ## Method
-We are using a pre-trained Wav2Vec model to train our data, and fine tuning hyperparameters in order to optimize the performance of the model. Wav2Vec model is pre-trained on 16 kHz frequency, a speech model that accepts a float array corresponding to the raw waveform of the speech signal. Then, we will convert the audio to text, passing the prediction to the tokenizer decode to get the transcription. We are utilizing clean testing data LibriSpeech ASR Corpus 
+We are using a pre-trained Wav2Vec model to train our data, and fine tuning hyperparameters in order to optimize the performance of the model. Wav2Vec model is pre-trained on 16 kHz frequency, a speech model that accepts a float array corresponding to the raw waveform of the speech signal. Then, we will convert the audio to text, passing the prediction to the tokenizer decode to get the transcription. We are utilizing clean testing data LibriSpeech ASR Corpus, 
 
 ## Result & Analysis
-jsdlkjfasldkfjasdflkjsadlfjsalkd Cope seeth and mald
+- most significant hyperparameter for test performance is hidden_dropout
+- no meaningful difference in evaluation score between different hyperparameter 
+
+Analysis: 
+- due to the sheer amount of data that Wav2Vec2 has been pretrained and finetuned on, changing the hyperparameters for the model doesn't make any meaningful difference in its performance
 
 ## Future direction
 For future directions, we would like to explore integrating this closed caption into Machine learning to train a robot. Currently, we need to train a robots/AI with machine learning through programming, and writing codes. But what if, instead of writing codes, we talked to the robots, and internally generate closed caption to understand, and train itself. 
