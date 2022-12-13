@@ -1,5 +1,5 @@
 # Subtitle-AI
- 
+
 ## Team Member
 Macy So, Lazaro Solorzano, Jared Chou
 ## Problem Statement
@@ -76,4 +76,7 @@ In addition to this, we would like to complete the integration between the front
 ### Research Paper
 [NLP Driven Ensemble Based Automatic Subtitle Generation and Semantic Video Summarization Technique](https://www.google.com/url?q=https://arxiv.org/pdf/1904.09740.pdf&sa=D&source=docs&ust=1669834722617923&usg=AOvVaw2Ww2EVMGVBoJeQCeZpn4HY)
  
+### Project Submission Details
+[GitHub Repository](https://github.com/jchou03/Subtitle-AI)
 
+Meeting: To be arranged (tenatively 12/14)
