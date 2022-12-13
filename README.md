@@ -53,6 +53,7 @@ In addition to this, we would like to complete the integration between the front
  
 ## Resources
 [Wav2Vec2](https://github.com/facebookresearch/fairseq/blob/main/examples/wav2vec/README.md)
+
 [LibriSpeech Dataset](http://www.openslr.org/12)
  
 ### Blog
