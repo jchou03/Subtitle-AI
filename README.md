@@ -56,7 +56,7 @@ In addition to this, we would like to complete the integration between the front
 [LibriSpeech Dataset](http://www.openslr.org/12)
  
 ### Blog
-[Speech Recognition using Transformers in Python] (https://www.thepythoncode.com/article/speech-recognition-using-huggingface-transformers-in-python) 
+[Speech Recognition using Transformers in Python](https://www.thepythoncode.com/article/speech-recognition-using-huggingface-transformers-in-python) 
  
 [Netflix Automated Subtitles](https://ottverse.com/netflix-automated-subtitling-using-ai-nlp/)
  
