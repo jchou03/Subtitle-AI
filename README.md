@@ -49,6 +49,7 @@ After the evaluation of 162 different configurations of the Wav2Vec2 model, ther
 
  
 ## Future direction
+![FrontEnd](./src/Frontend.png)
 For future directions with this project, we want to further optimize the performance of the Wav2Vec2 model. We would do this by starting with a earlier checkpoint of Wav2Vec2 (either 10 minute or 100 hour fine-tuned models), and then perform downstream training by splitting our dataset into training, validation, and testing subsets, and fine-tune the model by adjusting the learning rate, vocabulary size, etc. in order to improve overall performance and reduce WER. 
  
 In addition to this, we would like to complete the integration between the front-end website and the model prediction function on the back end. This might entails that Flask would have to be install and imported into the frontend and backend to connect the two ends, and make it into a full-stack project. This would enable external users without access to the source code to utilize the power of Wav2Vec2 in order to convert their audio to text. This would streamline the user experience for people to access our research. 
