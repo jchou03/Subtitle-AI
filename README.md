@@ -82,7 +82,7 @@ In addition to this, we would like to complete the integration between the front
 ### Project Submission Details
 [GitHub Repository](https://github.com/jchou03/Subtitle-AI)
 ### Work Distribution
-Macy So - In charge of building the front end for the platform, linking our model's capabilities online.
+Macy So - In charge of building the front end for the platform, linking our model's capabilities online with Flask. Conducting background research, and the introductory abstract of the write-up.
 
 Lazaro Solorzano - Responsible for developing the gridsearch algorithm for testing hyperparameters, performed extensive research for preprocessing (noise reduction), model choice, different hyperparameters to test, and datasets to use for training & testing.
 
