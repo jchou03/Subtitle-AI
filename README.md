@@ -39,7 +39,7 @@ Upon performing research online, we decided that the model hyperparameters that 
  
 ## Result & Analysis
 
-![Result Dataframe]('Result Dataframe.png')
+![Result Dataframe](./src/Result%20Dataframe.png)
 
 We found that there is no significant change in model performance with hyperparameter changes. We evaluated 162 different configurations of the Wav2Vec2 model which resulted in nearly identical results in terms of performance. The word error rate was 3.92% when testing on our smaller testing set, and was 4.13% when running on the full clean testing dataset from LibriSpeech (the same testing dataset that the original researchers of Wav2Vec2 used to evaluate their model).
  
