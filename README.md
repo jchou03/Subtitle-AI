@@ -79,4 +79,4 @@ In addition to this, we would like to complete the integration between the front
 ### Project Submission Details
 [GitHub Repository](https://github.com/jchou03/Subtitle-AI)
 
-Meeting: To be arranged (tenatively 12/14)
+Meeting: To be arranged (tentatively 12/14)
