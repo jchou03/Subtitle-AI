@@ -9,7 +9,7 @@ Closed captioning displays the audio portion of a television program as text on 
  
 ### Model Accuracy Measure
 The metric that we will use for our project will be transcription accuracy based on the partitioned test data set, evaluated based on the word error rate of our model. Our baseline aim will be for at most an average of 10% word error rate accuracy on testing data for success, looking to push for much higher accuracy if we have time to do so. 
- 
+
  
 ## Abstract
 Without a closed caption, all this vital information will be lost by a viewer with a hearing problem. But when a program has a closed caption, a viewer with a hearing problem can pick up on sarcasm, understand the vibe of the crowd, and understand who is talking when they are not on screen. We are trying to solve the problem of providing a service for every live audio translation with closed captioning, as not every streaming service/video has closed captions. We are also aiming to increase the accuracy of closed captioning during this research process. We will be using a pre-existing model, and utilizing transfer learning to create our own model. And to test it, we will be providing some new audio data to increase precision. The library in python that we will be using to create the model is Wave2Vec. With vast amounts of fine-tuning to the Wav2Vec2 model already, changes in the hyperparameter configuration of models will result in minimal performance changes. This implies that fine-tuning on the model will have a much higher impact on the model’s performance, rather than specific hyperparameters. We were able to achieve an average of 4.13% word error rate on the full set of testing data.
@@ -39,7 +39,7 @@ Upon performing research online, we decided that the model hyperparameters that 
  
 ## Result & Analysis
 
-![Result Dataframe]('Result Dataframe.png')
+![Result Dataframe](src/Result_Dataframe.png)
 
 We found that there is no significant change in model performance with hyperparameter changes. We evaluated 162 different configurations of the Wav2Vec2 model which resulted in nearly identical results in terms of performance. The word error rate was 3.92% when testing on our smaller testing set, and was 4.13% when running on the full clean testing dataset from LibriSpeech (the same testing dataset that the original researchers of Wav2Vec2 used to evaluate their model).
  
@@ -88,5 +88,3 @@ Macy So - In charge of building the front end for the platform, linking our mode
 Lazaro Solorzano - Responsible for developing the gridsearch algorithm for testing hyperparameters, performed extensive research for preprocessing (noise reduction), model choice, different hyperparameters to test, and datasets to use for training & testing.
 
 Jared Chou - Responsible for organizing group meetings, initializing the pre-trained checkpoing of the Wav2Vec2 model. Organized and handled preprocessing of dataset, developing a model prediction function, as well as developing an evaluation function for the model based on average word error rate.
-
-Meeting: To be arranged (tenatively 12/14)
