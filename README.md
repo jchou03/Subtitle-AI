@@ -2,8 +2,8 @@
 
 ## Team Member
 Macy So, Lazaro Solorzano, Jared Chou
-## Problem Statement
- 
+
+## Problem Statement 
 Closed captioning displays the audio portion of a television program as text on the TV screen, providing a critical link to news, entertainment, and information for individuals who are deaf or hard of hearing.The importance of this project is to enhance the educational learning experience for students and others with disabilities.There should be no restrictions for simply trying to watch a video or anything related to the sort. With subtitles/closed captions it will help eliminate this issue by being able to provide it to services that don’t already provide their closed captions. This relates to the work that we have done in class because it is building on transformers. Which provides APIs and tools to easily download and train state-of-the-art pre-trained models. Using pre-trained models can reduce your computing costs, carbon footprint, and save you the time and resources required to train a model from scratch. With this in mind, we worked on what is considered to be an important NLP task in our case being Speech-to-Text.  
  
  
@@ -38,12 +38,15 @@ Upon performing research online, we decided that the model hyperparameters that 
  
  
 ## Result & Analysis
+
+![Result Dataframe]('Result Dataframe.png')
+
 We found that there is no significant change in model performance with hyperparameter changes. We evaluated 162 different configurations of the Wav2Vec2 model which resulted in nearly identical results in terms of performance. The word error rate was 3.92% when testing on our smaller testing set, and was 4.13% when running on the full clean testing dataset from LibriSpeech (the same testing dataset that the original researchers of Wav2Vec2 used to evaluate their model).
  
 As we stated before, the most significant hyperparameter for test performance is hidden_dropout and the reason for that was the usefulness of hidden_dropout. What hidden_dropout does is “The dropout probability for all fully connected layers in the embeddings, encoder, and pooler.” The main advantage of this method is that it prevents all neurons in a layer from synchronously optimizing their weights. This adaptation, made in random groups, prevents all the neurons from converging to the same goal, thus decorrelating the weights.
  
 After the evaluation of 162 different configurations of the Wav2Vec2 model, there was no meaningful change in the performance. This is likely due to the fact that we were utilizing the Wav2Vec2-960h model, which was already fine-tuned on 960 hours of labeled English transcriptions from the LibriSpeech dataset, and the large amount of fine-tuning on the model was able to generate weights/parameters that were able to work extremely well regardless of the hyperparameters we adjusted. This was a surprising result to discover, because we were expecting modifying hyperparameters to affect model performance much more, but these findings truly highlight the power of the transformer based Wav2Vec2 model, especially when fine-tuned with significant amounts of data. These results also provide us with a strong jumping off point for future progress with optimizing audio to text models, specifically utilizing transfer learning on a less fine-tuned version of Wav2Vec2 in order to further optimize model performance.
- 
+
  
 ## Future direction
 For future directions with this project, we want to further optimize the performance of the Wav2Vec2 model. We would do this by starting with a earlier checkpoint of Wav2Vec2 (either 10 minute or 100 hour fine-tuned models), and then perform downstream training by splitting our dataset into training, validation, and testing subsets, and fine-tune the model by adjusting the learning rate, vocabulary size, etc. in order to improve overall performance and reduce WER. 
@@ -80,3 +83,11 @@ In addition to this, we would like to complete the integration between the front
 [GitHub Repository](https://github.com/jchou03/Subtitle-AI)
 
 Meeting: To be arranged (tentatively 12/14)
+### Work Distribution
+Macy So - In charge of building the front end for the platform, linking our model's capabilities online.
+
+Lazaro Solorzano - Responsible for developing the gridsearch algorithm for testing hyperparameters, performed extensive research for preprocessing (noise reduction), model choice, different hyperparameters to test, and datasets to use for training & testing.
+
+Jared Chou - Responsible for organizing group meetings, initializing the pre-trained checkpoing of the Wav2Vec2 model. Organized and handled preprocessing of dataset, developing a model prediction function, as well as developing an evaluation function for the model based on average word error rate.
+
+Meeting: To be arranged (tenatively 12/14)
